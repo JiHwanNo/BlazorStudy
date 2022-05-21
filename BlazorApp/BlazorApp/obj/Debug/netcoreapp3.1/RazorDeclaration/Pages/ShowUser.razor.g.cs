@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp.Shared
+namespace BlazorApp.Pages
 {
     #line hidden
     using System;
@@ -75,7 +75,14 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 1 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\ShowUser.razor"
+using BlazorApp.Data;
+
+#line default
+#line hidden
+#nullable disable
+    public partial class ShowUser : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -83,15 +90,31 @@ using BlazorApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Shared\NavMenu.razor"
+#line 18 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\ShowUser.razor"
        
-    private bool collapseNavMenu = true;
+    [Parameter]
+    public List<UserData> Users { get; set; }
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    [Parameter]
+    public Action CallbackTest { get; set; }
 
-    private void ToggleNavMenu()
+    protected override void OnInitialized()
     {
-        collapseNavMenu = !collapseNavMenu;
+        Users.Add(new UserData { Name = "Name_01" });
+        Users.Add(new UserData { Name = "Name_02" });
+        Users.Add(new UserData { Name = "Name_03" });
+    }
+
+    public void AddUser(UserData user)
+    {
+        Users.Add(user);
+    }
+
+    public void KickUser(UserData name)
+    {
+        Users.Remove(name);
+
+        CallbackTest.Invoke();
     }
 
 #line default
