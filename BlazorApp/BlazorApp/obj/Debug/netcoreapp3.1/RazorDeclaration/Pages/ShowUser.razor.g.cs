@@ -92,11 +92,13 @@ using BlazorApp.Data;
 #nullable restore
 #line 18 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\ShowUser.razor"
        
+    [CascadingParameter(Name = "ThemeColor")]
+    string Color { get; set; }
     [Parameter]
     public List<UserData> Users { get; set; }
 
     [Parameter]
-    public Action CallbackTest { get; set; }
+    public EventCallback CallbackTest { get; set; }
 
     protected override void OnInitialized()
     {
@@ -114,7 +116,7 @@ using BlazorApp.Data;
     {
         Users.Remove(name);
 
-        CallbackTest.Invoke();
+        CallbackTest.InvokeAsync(null);
     }
 
 #line default

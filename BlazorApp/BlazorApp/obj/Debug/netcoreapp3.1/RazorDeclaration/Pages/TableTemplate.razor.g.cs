@@ -76,14 +76,13 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\User.razor"
+#line 1 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\TableTemplate.razor"
 using BlazorApp.Data;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/user")]
-    public partial class User : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class TableTemplate<TItem> : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -91,31 +90,14 @@ using BlazorApp.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 36 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\User.razor"
+#line 24 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\TableTemplate.razor"
        
-
-    string _selectedColor = "Green";
-    List<string> _options = new List<string>() { "Red", "Green", "Blue" };
-    ShowUser _showUser;
-    List<UserData> _users = new List<UserData>();
-
-    string _inputName;
-    string _btnClass;
-
-
-    void AddUser()
-    {
-        _showUser.AddUser(new UserData() { Name = _inputName });
-        _inputName = "";
-    }
-    void KickUser(UserData name)
-    {
-        _users.Remove(name);
-    }
-    void CallbackTestFunc()
-    {
-        _inputName = "CallbackTest";
-    }
+    [Parameter]
+    public RenderFragment Header { get; set; }
+    [Parameter]
+    public RenderFragment<TItem> Row { get; set; }
+    [Parameter]
+    public IReadOnlyList<TItem> Items { get; set; }
 
 #line default
 #line hidden

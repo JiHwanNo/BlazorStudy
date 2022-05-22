@@ -10,12 +10,14 @@
     {
         <li @key="user" class="list-group-item">
             <button type="button" class="bnt btn-link" @onclick="(() => KickUser(user))">[Kick]</button>
-            <label>@user.Name</label>
+            <label style = "color : @Color"> @user.Name</label>
         </li>
     }
 </ul>
 
 @code {
+    [CascadingParameter(Name = "ThemeColor")]
+    string Color { get; set; }
     [Parameter]
     public List<UserData> Users { get; set; }
 

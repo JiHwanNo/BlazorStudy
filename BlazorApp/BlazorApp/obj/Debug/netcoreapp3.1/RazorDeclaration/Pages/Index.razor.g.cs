@@ -75,6 +75,13 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Index.razor"
+using BlazorApp.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +90,14 @@ using BlazorApp.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 15 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Index.razor"
+      
+    FoodService foodService = new FoodService();
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

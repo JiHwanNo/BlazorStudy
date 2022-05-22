@@ -115,3 +115,5 @@ C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreap
 C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\BlazorApp.csproj.CopyComplete
 C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ShowUser.razor.g.cs
 C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\Razor\Pages\ShowUser.razor.g.cs
+C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\TableTemplate.razor.g.cs
+C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.1\Razor\Pages\TableTemplate.razor.g.cs
