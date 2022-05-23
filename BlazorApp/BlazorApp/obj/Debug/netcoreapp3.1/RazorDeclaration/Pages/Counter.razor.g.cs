@@ -13,76 +13,77 @@ namespace BlazorApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 1 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 2 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 3 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 4 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 5 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 6 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 7 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 8 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using BlazorApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
+#line 9 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\_Imports.razor"
 using BlazorApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Counter.razor"
+#line 3 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Counter.razor"
 using System.Threading;
 
 #line default
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/counter/{CurrentCount:int}")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -91,13 +92,12 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 12 "C:\Users\lg\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Counter.razor"
+#line 14 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\BlazorApp\BlazorApp\Pages\Counter.razor"
        
-    private int currentCount = 0;
 
     private void IncrementCount()
     {
-        currentCount++;
+        CurrentCount++;
     }
     void AutoIncrement()
     {
@@ -111,6 +111,8 @@ using System.Threading;
         }, null, 1000, 1000);
 
     }
+    [Parameter]
+    public int CurrentCount { get; set; }
 
 
 #line default

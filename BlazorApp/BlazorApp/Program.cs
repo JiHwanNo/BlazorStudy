@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 namespace BlazorApp
 {
+    //SPA (Single Page Application)
+
     public class Program
     {
         public static void Main(string[] args)
