@@ -1,0 +1,9 @@
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.deps.json
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\bin\Debug\netcoreapp3.1\SharedData.pdb
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfoInputs.cache
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.AssemblyInfo.cs
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.csproj.CoreCompileInputs.cache
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.dll
+C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\SharedData\obj\Debug\netcoreapp3.1\SharedData.pdb
