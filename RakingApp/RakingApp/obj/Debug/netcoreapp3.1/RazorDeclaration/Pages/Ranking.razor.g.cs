@@ -13,77 +13,77 @@ namespace RakingApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 1 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 2 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 4 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 5 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 6 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 7 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 8 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using RakingApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
+#line 9 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\_Imports.razor"
 using RakingApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
+#line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
 using RakingApp.Data.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
+#line 4 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
 using RakingApp.Data.Services;
 
 #line default
@@ -98,7 +98,7 @@ using RakingApp.Data.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 85 "C:\Users\yosulkong6\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
+#line 85 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
        
     List<GameResult> _gameResults;
 

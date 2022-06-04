@@ -1,0 +1,9 @@
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\bin\Debug\netcoreapp3.1\ShareData.deps.json
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\bin\Debug\netcoreapp3.1\ShareData.dll
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\bin\Debug\netcoreapp3.1\ShareData.pdb
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.csproj.AssemblyReference.cache
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.AssemblyInfoInputs.cache
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.AssemblyInfo.cs
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.csproj.CoreCompileInputs.cache
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.dll
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\ShareData\obj\Debug\netcoreapp3.1\ShareData.pdb
