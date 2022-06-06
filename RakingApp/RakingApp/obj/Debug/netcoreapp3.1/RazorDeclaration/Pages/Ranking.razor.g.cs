@@ -77,7 +77,7 @@ using RakingApp.Shared;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\Pages\Ranking.razor"
-using RakingApp.Data.Models;
+using ShareData.Models;
 
 #line default
 #line hidden
@@ -137,11 +137,11 @@ using RakingApp.Data.Services;
         if(_gameResult.Id ==0)
         {
             _gameResult.Date = DateTime.Now;
-            var result = _RankingService.AddGameResult(_gameResult);
+            var result = await  _RankingService.AddGameResult(_gameResult);
         }
         else
         {
-            var retsult = _RankingService.UpdateGameResult(_gameResult);
+            var retsult = await _RankingService.UpdateGameResult(_gameResult);
         }
 
         _gameResults = await _RankingService.GetGameResultsAsyc();

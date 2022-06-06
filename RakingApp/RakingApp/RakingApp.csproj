@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Models\" />
+    <ProjectReference Include="..\ShareData\ShareData.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,10 @@
-﻿using RakingApp.Data.Models;
+﻿using Newtonsoft.Json;
+using ShareData.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace RakingApp.Data.Services
@@ -15,56 +18,59 @@ namespace RakingApp.Data.Services
 
     public class RankingService
     {
-        ApplicationDbContext _context;
-        public RankingService(ApplicationDbContext con)
+        HttpClient _httpClient;
+
+        public RankingService(HttpClient client)
         {
-            _context = con;
+            _httpClient = client;
         }
         //Create
-        public Task<GameResult> AddGameResult(GameResult gameResult)
+        public async Task<GameResult> AddGameResult(GameResult gameResult)
         {
-            _context.GameResults.Add(gameResult);
-            _context.SaveChanges();
+            string jsonStr = JsonConvert.SerializeObject(gameResult);
+            var content = new StringContent(jsonStr, Encoding.UTF8, "application/json");
+            var result = await _httpClient.PostAsync("api/ranking", content);
 
-            return Task.FromResult(gameResult);
+            if (result.IsSuccessStatusCode == false)
+                throw new Exception("AddGameResult failed");
+
+            var resultContent = await result.Content.ReadAsStringAsync();
+            GameResult resGameResult = JsonConvert.DeserializeObject<GameResult>(resultContent);
+            return resGameResult;
         }
         //Read
-        public Task<List<GameResult>> GetGameResultsAsyc()
+        public async Task<List<GameResult>> GetGameResultsAsyc()
         {
-            List<GameResult> results = _context.GameResults.OrderByDescending(item => item.Score).ToList();
+            var result = await _httpClient.GetAsync("api/ranking");
 
-            return Task.FromResult( results);
+            var resultContent = await result.Content.ReadAsStringAsync();
+            List<GameResult> resGameResults = JsonConvert.DeserializeObject<List<GameResult>>(resultContent);
+            return resGameResults;
         }
 
         //Update
-        public Task<bool> UpdateGameResult(GameResult gameResult)
+        public async Task<bool> UpdateGameResult(GameResult gameResult)
         {
-            var findResult = _context.GameResults.Where(x => x.Id == gameResult.Id).FirstOrDefault();
+            string jsonStr = JsonConvert.SerializeObject(gameResult);
+            var content = new StringContent(jsonStr, Encoding.UTF8, "application/json");
+            var result = await _httpClient.PutAsync("api/ranking", content);
 
-            if (findResult == null)
-                return Task.FromResult(false);
-            findResult.UserName = gameResult.UserName;
-            findResult.Score = gameResult.Score;
-            _context.SaveChanges();
+            if (result.IsSuccessStatusCode == false)
+                throw new Exception("UpdateGameResult failed");
 
-            return Task.FromResult(true);
-             
+            return true;
         }
         //Delete
 
 
-        public Task<bool> DeleteGameResult(GameResult gameResult)
+        public async Task<bool> DeleteGameResult(GameResult gameResult)
         {
-            var findResult = _context.GameResults.Where(x => x.Id == gameResult.Id).FirstOrDefault();
+            var result = await _httpClient.DeleteAsync($"api/ranking/{gameResult.Id}");
 
-            if (findResult == null)
-                return Task.FromResult(false);
+            if (result.IsSuccessStatusCode == false)
+                throw new Exception("DeleteGameResult failed");
 
-            _context.GameResults.Remove(gameResult);
-            _context.SaveChanges();
-
-
-            return Task.FromResult(true);
+            return true;
         }
     }
 }

@@ -104,3 +104,5 @@ C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\obj\Debug\netcoreap
 C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\obj\Debug\netcoreapp3.1\RakingApp.genruntimeconfig.cache
 C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\Ranking.razor.g.cs
 C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\obj\Debug\netcoreapp3.1\Razor\Pages\Ranking.razor.g.cs
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\bin\Debug\netcoreapp3.1\ShareData.dll
+C:\Users\lg\Documents\GitHub\BlazorStudy\RakingApp\RakingApp\bin\Debug\netcoreapp3.1\ShareData.pdb

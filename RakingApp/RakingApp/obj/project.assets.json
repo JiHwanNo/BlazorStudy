@@ -1519,6 +1519,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "ShareData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ShareData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShareData.dll": {}
+        }
       }
     }
   },
@@ -5686,6 +5696,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "ShareData/1.0.0": {
+      "type": "project",
+      "path": "../ShareData/ShareData.csproj",
+      "msbuildProject": "../ShareData/ShareData.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5697,7 +5712,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.16",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.16",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.16"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.16",
+      "ShareData >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5726,7 +5742,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lg\\Documents\\GitHub\\BlazorStudy\\RakingApp\\ShareData\\ShareData.csproj": {
+              "projectPath": "C:\\Users\\lg\\Documents\\GitHub\\BlazorStudy\\RakingApp\\ShareData\\ShareData.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
